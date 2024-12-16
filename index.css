@@ -1,0 +1,210 @@
+/* Reset some basic styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall layout */
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+    /* height: 100vh; */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #333;
+    /* transition: background-color 0.3s ease; */
+}
+
+/* Container for the top-left and menu button elements */
+.top-container {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    border-bottom: 3px solid #656363;  /* Full-width line under the top container */
+}
+
+/* Styling for the letters in the top left */
+.top-left {
+    font-size: 2rem;
+    color: #656363;
+}
+
+/* Styling for the menu button */
+/* Styling for the menu button */
+.menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;  /* Extend the button to fill the whole right side */
+    left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid #656363; /* Border on the left side of the menu button */
+    
+}
+
+.menu-btn button {
+    padding: 10px 25px;
+    font-size: 1.5rem;
+    left: 9px;
+    background-color: transparent; 
+    color: #656363;
+    border: none;
+    cursor: pointer;
+    /* border-radius: 5px; */
+    z-index: 3;  /* Ensure the button appears above the background */
+}
+
+.title{
+    /* height: 400px; */
+    display: flex;
+    display: inline-block;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin-top: 400px;
+}
+/* Big title styling */
+.title h1 {
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;  /* Convert text to uppercase */
+    letter-spacing: 5px; /* Space out the letters */
+    z-index: 10;
+}
+
+/* Website list container */
+.website-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;  /* Enable horizontal scrolling */
+    scroll-behavior: smooth;
+    /* overflow-y: hidden; */
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;  /* Adjust to avoid overlap with title */
+    padding-bottom: 20px; /* Add some padding at the bottom for better scroll visibility */
+    padding-top: 50px;  /* Ensure space for the top container */
+    justify-content: flex-start;
+    flex-wrap: nowrap; /* Prevent wrapping of items */
+}
+
+/* Each website item (iframe + description) */
+.website-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    gap: 15px;
+    justify-content: flex-start;
+    width: 1400px;  /* Ensure fixed width for each item */
+    padding: 20px;
+    height: 600px; 
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevent items from shrinking */
+    transition: background-color 0.9s ease;
+}
+/* .website-item:hover {
+
+    background-color: #3498db; 
+} */
+
+/* Iframe container */
+.iframe-container {
+    width: 100%; /* Adjust the width of the iframe */
+    /* height: 600px; Adjust the height of the iframe */
+    height: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+/* Description section */
+.website-description {
+    width: 35%; /* Adjust width of description area */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.website-description h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.website-description p {
+    font-size: 1rem;
+    color: #666;
+}
+.website-item {
+    flex-direction: row-reverse;
+}
+
+/* typing animation */
+
+.typed-out{
+    overflow: hidden;
+    /* border-right: .15em solid orange; */
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: 
+      typing 3s steps(200, end) forwards,
+      blink .8s infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* sparkles */
+
+  .sparkle-container {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Each individual sparkle element */
+.sparkle {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: sparkleAnimation 1.5s infinite alternate;
+}
+
+@keyframes sparkleAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JanzenWebDeisgn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <!-- Top container with two letters (AB) and menu button -->
+    <div class="top-container">
+        <div class="top-left">
+            <p>CJ</p>
+        </div>
+
+        <div class="menu-btn">
+            <button>Menu</button>
+        </div>
+    </div>
+    <div class="sparkle-container"></div>
+
+    
+    <!-- Main title in the center -->
+    <div class="title typed-out">
+        <h1>ZenWeb Design</h1>
+    </div>
+    <!-- Showcase of websites -->
+    <div class="website-list">
+        <!-- Website 1 -->
+        <div class="website-item knocaps" id="knocaps">
+            <div class="iframe-container">
+                <iframe src="https://cadejanz.github.io/KnoCaps/" frameborder="0"></iframe>
+            </div>
+            <div class="website-description">
+                <h2>Website 1: KnoCaps</h2>
+                <p>This website showcases a fun game called KnoCaps. It's a creative project with a unique user interface and simple gameplay.</p>
+            </div>
+        </div>
+
+        <!-- Website 2 -->
+        <div class="website-item">
+            <div class="iframe-container">
+                <iframe src="https://cadejanz.github.io/VintageSauce.github.io/" frameborder="0"></iframe>
+            </div>
+            <div class="website-description">
+                <h2>Website 2: KnoCaps</h2>
+                <p>This website showcases a fun game called KnoCaps. It's a creative project with a unique user interface and simple gameplay.</p>
+            </div>
+        </div>
+
+        <div class="website-item">
+            <div class="iframe-container">
+                <iframe src="https://cadejanz.github.io/VintageSauce.github.io/" frameborder="0"></iframe>
+            </div>
+            <div class="website-description">
+                <h2>Website 2: KnoCaps</h2>
+                <p>This website showcases a fun game called KnoCaps. It's a creative project with a unique user interface and simple gameplay.</p>
+            </div>
+        </div>
+        
+        <!-- Add more website items as needed -->
+    </div>
+    <script>
+        // Wait for the page to fully load
+        window.onload = function() {
+            // Add the class to trigger the animation
+            document.querySelector('.title').classList.add('typed-out');
+        };
+    </script>
+     <script src="index.js"></script>
+</body>
+</html>

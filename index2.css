@@ -1,0 +1,124 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Top container with letters and menu button */
+.top-container {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 3px solid #333;
+    height: 50px;
+}
+
+/* Styling for the letters in the top-left */
+.top-left {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Styling for the menu button */
+.menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-btn button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu-btn button:hover {
+    background-color: #45a049;
+}
+
+/* Title styling */
+.title {
+    margin-top: 100px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+/* Website list container */
+.website-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Each website item (iframe + description) */
+.website-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Space between iframe and description */
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Iframe container */
+.iframe-container {
+    width: 60%; /* Adjust the width of the iframe */
+    height: 300px; /* Adjust the height of the iframe */
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+/* Description section */
+.website-description {
+    width: 35%; /* Adjust width of description area */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.website-description h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.website-description p {
+    font-size: 1rem;
+    color: #666;
+}
